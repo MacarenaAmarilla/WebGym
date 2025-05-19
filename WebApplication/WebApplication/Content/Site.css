@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
+    z-index: 999;
+    align-items: center;
+}
+
+.topbar-right i {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.logo {
+    height: 50px;
+}
+
+
+.hero {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero-buttons .btn {
+    background-color: #7ac043;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    margin: 0.3rem 0;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.redes {
+    margin-top: 1rem;
+}
+
+.redes a {
+    color: white;
+    background: #7ac043;
+    margin: 0 2px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+}
+
+.main-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    color: #555;
+}

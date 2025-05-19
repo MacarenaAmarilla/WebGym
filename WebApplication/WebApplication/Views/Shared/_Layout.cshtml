@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Gimnasio MAF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/Site.css" />
+</head>
+<body>
+    <nav class="topbar">
+        <div class="topbar-left">
+            <img src="~/Content/img/logo.jpg" class="logo" alt="Logo Gimnasio" />
+        </div>
+        <div class="topbar-right">
+            <i class="fa-solid fa-circle-question"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </nav>
+
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" class="hero-image" alt="Fondo principal" />
+            <div class="hero-content">
+                <div class="hero-buttons">
+                    <a href="@Url.Action("Login", "Home")" class="btn">Tengo usuario</a>
+                    <a href="@Url.Action("Registro", "Socio")" class="btn">Quiero registrarme</a>
+                </div>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Gimnasio MAF</p>
+    </footer>
+
+
+
+</body>
+</html>
